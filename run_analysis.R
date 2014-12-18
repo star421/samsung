@@ -1,4 +1,4 @@
-setwd("D:/Programs/R/UCI HAR Dataset")
+# setwd("D:/Programs/R/UCI HAR Dataset")
 library(reshape2)
 
 # Merge the training and the test sets to create one data set
@@ -8,7 +8,7 @@ features   <- read.table("./train/x_train.txt")
 activities <- read.table("./train/y_train.txt")
 subjects   <- read.table("./train/subject_train.txt")
 train <- cbind(features, activities, subjects)
-# it is useful to set features‘ columns to the first place
+# it is useful to set featuresâ€˜ columns to the first place
 
 # read and bind the test data set 
 features   <- read.table("./test/x_test.txt")
